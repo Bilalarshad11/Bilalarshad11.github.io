@@ -1,0 +1,69 @@
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" type="text/css" href="Style Sheet.css">
+</head>
+
+    <body>
+        <div id="outterbody">
+            <h3 id= "hello">Hello there!</h3>
+            <h4 id = "Address"> How may I address you?</h4>
+            <h5 id ="Fill" >Kinldy fill the following form. :)</h5>
+                <form action="/action_page.php" name = "Form" id ="Names">
+                    Please enter your name <input id = "Fname" type="text" name="fname" value = ""><br>
+                    Please enter your age <input id = "Lname" type="number" name="lname"><br>
+                </form>
+                <form id = "Gender">
+                    <input id = "Male" type="radio" name="gender" value="male" checked> Male<br>
+                    <input id = "Female" type="radio" name="gender" value="female"> Female<br>
+                    <input id = "Other" type="radio" name="gender" value="other"> Other
+                </form>
+                <input id="Done" type="submit" value="Submit">  
+                <h4 id = "Ok"></h4>
+                <button  onclick="location.href = 'index.html';"id = "TYss" style="display: none;" >Go to my CV</button>
+                
+            </div>
+
+
+        
+    </body>
+</html>
+<script src = "jquery.js"></script>
+<script>
+    $(document).ready(function(){
+        var name, age, gender;
+        $("#Done").on('click',function(){   
+            
+            
+            name = $('#Fname').val();
+            if(name === "")
+            {
+                $("#Ok").html("Oops! I think you forgot to enter your name");
+            }
+            else{
+                age = $('#Lname').val();
+                $("#hello").html("Hello there!\t"+name);
+                $("#Address").fadeOut(600);
+                $("#Fill").fadeOut(600);
+                $("#Gender").fadeOut(600);
+                $("#Names").fadeOut(600);
+                $("#Ok").fadeOut(600);
+                $("#TYss").fadeIn(600);
+                $("#Done").fadeOut(600);
+            }
+            
+            
+
+        });
+        $("#Male").on('click',function(){   
+            gender = "Male";
+        });
+        $("#Other").on('click',function(){   
+            gender = "Other";
+        });
+        $("#Female").on('click',function(){   
+            gender = "Female";
+        });
+        
+        
+    });
+</script>
