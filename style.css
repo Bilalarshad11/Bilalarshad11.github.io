@@ -160,6 +160,28 @@ height:140px;
 
 
 }
+#table img
+{
+margin-top:-165px;	
+margin-left:800px;
+
+}
+
+.img-wrapper {
+  width: 200px;
+  height: 200px;
+  position: relative;
+  display: inline-block;
+}
+.img-wrapper img {
+  display: block;
+  position: absolute;
+}
+.img-wrapper:hover {
+  cursor: wait;
+}
+
+
 #ach
 {
 	margin-left:270px;
