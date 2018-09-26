@@ -232,3 +232,22 @@ padding-left:18px;
 color:black;
 
 }
+@media only screen and (max-width: 1200px) {
+   #obj
+   {
+	   display:none;
+   }
+   .biggerbox
+   {
+	display:none;   
+   }
+   .box
+   {
+	   margin-left:400px;
+   }
+   #about ul li
+   {
+	   float:none;
+	   padding-top:0px;
+   }
+}
