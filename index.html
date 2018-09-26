@@ -10,68 +10,178 @@
         </style>
    <link rel="stylesheet" type="text/css" href="style.css">
    
+   </script>
+</head>
+<body class="bg">
+  <div id="header">
+      <div id="image0">
+             
+                     <div class="rounded">
+                     <img id = "Pictures12" src="BilalBoy.png">
+                     </div>
+                     <div id="obj">
+                       <h2> objective</h2>
+                       <p>
+                            "To pursue my career as an outstanding professional in a challenging and dynamic environment where I                            can develop and boost my skills to the extreme by complementing technical knowledge with practical                            experience."
+                       </p>
+                     </div>
+                     <div id="intro">
+      					 <p>HELLO! I'M</p> 
+     					 <h1>Bilal Arshad</h1>
+    					 <p>WEB DEVELOPER</p> 
+                 	 </div>
+                     <div id="box1" class="box">
+                         
+                        <img id ="AboutClick"src="BilalAbout.png">
+                     </div>
+                     <div id="about" style="display:none" class="biggerbox">
+                       <ul>
+                         <li> <span><strong>Address   : </strong>650 Kashmir block, Allama Iqbal town, Lahore</span></li>
+                   <li><span><strong>Email  : </strong><a href="https://mail.google.com/">bilalarshad1011@gmail.com </a></span></li>
+                         <li><span><strong>Domicile  : </strong>Lahore</span></li>
+                         <li><span><strong>Contact  : </strong>03334897988</span></li>
+                         <li><span><strong>Blood Group  : </strong>B Positive(+)</span></li>
+                       </ul>
+        </div>
+     </div>
+  </div>
+  <hr>
+  <div id="middle">
+     <div id="uppermiddle">
+        <div id="box2" class="box">
+           <img src="Bilal edu.png">
+        </div>
+        <div  id="table" class="biggerbox">
 
-    <body>
-        <div id="outterbody">
-            <h3 id= "hello">Hello there!</h3>
-            <h4 id = "Address"> How may I address you?</h4>
-            <h5 id ="Fill" >Kinldy fill the following form. :)</h5>
-                <form action="/action_page.php" name = "Form" id ="Names">
-                    Please enter your name <input id = "Fname" type="text" name="fname" value = ""><br>
-                    Please enter your age <input id = "Lname" type="number" name="lname"><br>
-                </form>
-                <form id = "Gender">
-                    <input id = "Male" type="radio" name="gender" value="male" checked> Male<br>
-                    <input id = "Female" type="radio" name="gender" value="female"> Female<br>
-                    <input id = "Other" type="radio" name="gender" value="other"> Other
-                </form>
-                <input id="Done" type="submit" value="Submit">  
-                <h4 id = "Ok"></h4>
-                <button  onclick="location.href = 'CV.html';"id = "TYss" style="display: none;" >Go to my CV</button>
-                
-            </div>
+			<table >
+ 			 <tr>
+    			<th>Year</th>
+				<th>Descpline</th>
+   				<th>Grades</th>
+    			<th>Institution</th>
+  			</tr>
+ 			<tr id = "DPSClick">
+   		 		<td>2014</td>
+    			<td>Matriculation</td>
+    			<td>90%</td>
+				<td >DPS Model Town</td>
+  				</tr>
+ 			<tr id  = "FCCClick">
+    			<td>2016</td>
+    			<td>Intermediate</td>
+    			<td>83%</td>
+				<td>Forman Christian College</td>
+  				</tr>
+  			<tr id = "FASTClick">
+    			<td>2018</td>
+    			<td>Baccalaureate</td>
+   		 		<td>2.66</td>
+				<td>Fast-Nuces</td>
+  			</tr>
+ 
+  		</table>
+  		  <div class="img-wrapper">
+  		   <img id = "ToChangePic"src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTSebn2C7BVB4NsRt4XWfckS5TMkqpACx9AW04k2H7J2-nwvrEN" width="270" height="180">
+  		  </div>
+        </div>
+        <br>
+        <hr>
+        <div id="box3" class="box">
+          <img id = "AchClick" src="Achievments.png">
+        </div>
+        <div id="ach" style="display:none" class="biggerbox">
+             <ul>
+                 <li>Won many certificates during competitions of Scouting.</li>
+                 <li>Co-Head in Sports festival in 2016 at FAST, Lahore.</li>
+                 <li>Won 50% Scholarship at FAST.</li>
+                 <li>Completed all the assigned projects with remarkable distinction, during Studies</li>
+                 <li>Remained Class Representative at university and college</li>
+
+             </ul>
+        </div>
+        <hr>
+     </div>
+     <div id="centermiddle">
+           <div id="box4" class="box">
+              <img id = "KeyClick"src="KeySkills.png">
+           </div>
+           <div id="key" style="display:none"class="biggerbox">
+              <ul>
+                <li>Better Managing skills.</li>
+                <li>Goal oriented and self-motivated.</li>
+                <li>Strong Leadership skills. </li>
+                <li>Ability to work in competitive environment to set targets</li>
+                <li>Excellent interpersonal and communication skills</li>
+                <li>Positive & winning attitude and always willing to learn</li>
+
+              </ul>
+           </div>
+           <hr>
+           <div id="box5" class="box">
+                <img id = "TSClick"src="TechnicalSkills.png">
+           </div>
+           <div id="tech" style = "display:none"class="biggerbox">
+              <ul>
+                 <li>C++</li>
+                 <li>JAVA</li>
+                 <li>SQL</li>
+                 <li>HTML & CSS</li>
+                 <li>MICROSOFT OFFICE</li>
+              </ul>
+           </div>
+           <hr>
+        </div>
 
 
-        
-    </body>
+   </div>
+   <div id="button">
+      <a href="#top">Top</a>
+   </div>
+</body>
 </html>
 <script src = "jquery.js"></script>
 <script>
-    $(document).ready(function(){
-        var name, age, gender;
-        $("#Done").on('click',function(){   
-            
-            
-            name = $('#Fname').val();
-            if(name === "")
-            {
-                $("#Ok").html("Oops! I think you forgot to enter your name");
-            }
-            else{
-                age = $('#Lname').val();
-                $("#hello").html("Hello there!\t"+name);
-                $("#Address").fadeOut(600);
-                $("#Fill").fadeOut(600);
-                $("#Gender").fadeOut(600);
-                $("#Names").fadeOut(600);
-                $("#Ok").fadeOut(600);
-                $("#TYss").fadeIn(600);
-                $("#Done").fadeOut(600);
-            }
-            
-            
+  $(document).ready(function(){
+    $("#Pictures12").on('mouseover',function(){
+  if(ChangePic === false)
+  {
+      $(this).attr('src','BilalBoy2.png');   
+      ChangePic = true;
+  }
+  else
+  {
+      $(this).attr('src','BilalBoy.png');   
+      ChangePic = false;
+  }
+  });
+  $("#AboutClick").on('click',function()
+  {   
+    $('#about').slideToggle(600);
+  })
+  $("#AchClick").on('click',function()
+  {   
+    $('#ach').slideToggle(600);
+  })
+  $("#KeyClick").on('click',function()
+  {   
+    $('#key').slideToggle(600);
+  })
+  $("#TSClick").on('click',function()
+  {   
+    $('#tech').slideToggle(600);
+  })
+  $("#DPSClick").on('mouseover',function()
+  {   
+    $("#ToChangePic").attr('src','DPS.jpg');
+  })
+  $("#FASTClick").on('mouseover',function()
+  {   
+    $("#ToChangePic").attr('src','FAST.jpg');
+  })
+  $("#FCCClick").on('mouseover',function()
+  {   
+    $("#ToChangePic").attr('src','FCC.jpg');
+  })
+});
 
-        });
-        $("#Male").on('click',function(){   
-            gender = "Male";
-        });
-        $("#Other").on('click',function(){   
-            gender = "Other";
-        });
-        $("#Female").on('click',function(){   
-            gender = "Female";
-        });
-        
-        
-    });
 </script>
